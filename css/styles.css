@@ -3,6 +3,10 @@ body{
   font-family: sans-serif;
 }
 /*------------------- Inicio Ejercicio de Practica --------------------------------*/
+#website *{
+  margin: 0px;
+  padding: 0px;
+}
 #website{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -21,13 +25,24 @@ body{
 
 #menu {
   grid-column: 1 / 6;
+
   background-color: #64b5f6;
   color: black;
 }
 
+#menu ul{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+
 #contenido{
   grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
   background-color:#e0e0e0;
+  padding: 20px;
 }
 
 #contenido article{
