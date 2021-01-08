@@ -8,7 +8,9 @@ body{
   margin: 0px auto;
   display: grid; /*definir contenedor de grid*/
   /*grid-template-columns: calc(50% - 5px) calc(50% - 5px); Define 2 columnas*/
-  grid-template-columns: 50% 25% 15% 10%;
+  /*grid-template-columns: repeat(4, 24.4%); /*coloca 4 columnas al 24.4%*/
+  /*grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%;*/
+  grid-template-columns: repeat(4, 1fr);/* La unidad fr representa una fracción del espacio disponible en el contenedor de la cuadrícula.*/
   padding: 10px;
   grid-gap: 10px;  /*Margen entre elementos, no en columnas*/
   border: 3px solid #E65100;
