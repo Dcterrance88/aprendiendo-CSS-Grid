@@ -18,7 +18,11 @@ body{
 }
 
 #cabecera{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 / 6;
+  display: flex;
   background-color: #0d47a1;
   color: white;
 }
