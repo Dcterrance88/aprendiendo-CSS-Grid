@@ -12,7 +12,7 @@ body{
   /*grid-template-columns: repeat(4, 24.4%); /*coloca 4 columnas al 24.4%*/
   /*grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%;*/
   grid-template-columns: repeat(3, 1fr);/* La unidad fr representa una fracción del espacio disponible en el contenedor de la cuadrícula.*/
-  grid-template-rows: repeat(2, 1fr) 3fr;
+  grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
   padding: 10px;
   grid-gap: 10px;  /*Margen entre elementos, no en columnas*/
   border: 3px solid #E65100;
@@ -34,6 +34,8 @@ body{
 }
 
 .layout .green{
+  grid-row-start: 2;
+  grid-row-end: 6;
   background-color: #43A047;
 }
 
@@ -43,11 +45,12 @@ body{
 }
 
 .layout .pink{
-  grid-column: 1 / 3;
+  grid-row: 3 / 5;
   background-color: #F48FB1;
 }
 
 .layout .purple{
+  grid-row: 3 / 5;
   background-color: #311B92;
 }
 
@@ -56,6 +59,6 @@ body{
   grid-column-start: 1;
   grid-column-end: 3;
   */
-  grid-column: 1 / 4;
+  grid-column: 2 / 4;
   background-color: #4E342E;
 }
