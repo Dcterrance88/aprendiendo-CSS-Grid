@@ -4,6 +4,13 @@ body{
 }
 
 .layout{
+  width: 1200px;
+  margin: 0px auto;
+  display: grid; /*definir contenedor de grid*/
+  /*grid-template-columns: calc(50% - 5px) calc(50% - 5px); Define 2 columnas*/
+  grid-template-columns: 50% 25% 15% 10%;
+  padding: 10px;
+  grid-gap: 10px;  /*Margen entre elementos, no en columnas*/
   border: 3px solid #E65100;
 }
 
@@ -13,7 +20,6 @@ body{
   color: white;
   padding: 20px;
   border: 4px solid #222;
-  margin: 10px;
   background-color: gray;
 }
 
