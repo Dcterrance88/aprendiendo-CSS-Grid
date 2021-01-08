@@ -2,7 +2,45 @@ body{
   text-align: center;
   font-family: sans-serif;
 }
+/*------------------- Inicio Ejercicio de Practica --------------------------------*/
+#website{
+  width: 75%;
+  height: 100vh;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
 
+#cabecera{
+  background-color: #0d47a1;
+  color: white;
+}
+
+#menu {
+  background-color: #64b5f6;
+  color: black;
+}
+
+#contenido{
+  background-color:#e0e0e0;
+}
+
+#contenido article{
+  background-color: #aeaeae;
+  border: 1px solid #8d8d8d;
+}
+
+#lateral{
+  background-color: #009688;
+  color: white;
+}
+
+#pie-pagina{
+  background-color: #212121;
+  color: #e0e0e0;
+}
+/*------------------- Fin Ejercicio de Practica -----------------------------------*/
+
+/*------------------- Inicio Ejercicio de aprendizaje -----------------------------*/
 .layout{
   width: 80%;
   height: 400px;
@@ -62,3 +100,5 @@ body{
   grid-column: 2 / 4;
   background-color: #4E342E;
 }
+
+/*------------------- Fin Ejercicio de aprendizaje -----------------------------*/
