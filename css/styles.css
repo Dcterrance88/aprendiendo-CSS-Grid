@@ -2,7 +2,80 @@ body{
   text-align: center;
   font-family: sans-serif;
 }
-/*------------------- Inicio Ejercicio de Practica --------------------------------*/
+/*------------------- Inicio Ejercicio de Practica GRID AREA------------------*/
+#website-area *{
+  margin: 0px;
+  padding: 0px;
+}
+#website-area{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+  grid-template-areas:
+    "cabecera cabecera cabecera cabecera cabecera"
+    "menu menu menu menu menu"
+    "lateral contenido contenido contenido contenido"
+    "lateral footer footer footer footer";
+  width: 75%;
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+
+#cabecera-area{
+  grid-area: cabecera;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #000070;
+  color: white;
+}
+
+#menu-area{
+  grid-area: menu;
+  line-height: 70px;
+  background-color: #7953d2;
+  color: black;
+}
+
+#menu-area ul{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+}
+
+#menu-area ul li a{
+  color: white;
+}
+
+#contenido-area{
+  grid-area: contenido;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  background-color:#e0e0e0;
+  padding: 20px;
+}
+
+#contenido-area article{
+  background-color: #aeaeae;
+  border: 1px solid #8d8d8d;
+}
+
+#lateral-area{
+  grid-area: lateral;
+  background-color: #4527a0;
+  color: white;
+}
+
+#pie-pagina-area{
+  grid-area: footer;
+  background-color: #12005e;
+  color: #e0e0e0;
+}
+
+/*------------------- Inicio Ejercicio de Practica GRID ----------------------*/
 #website *{
   margin: 0px;
   padding: 0px;
@@ -29,7 +102,7 @@ body{
 
 #menu {
   grid-column: 1 / 6;
-
+  line-height: 70px;
   background-color: #64b5f6;
   color: black;
 }
